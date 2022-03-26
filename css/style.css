@@ -1,0 +1,138 @@
+@import url(https://fonts.google.com/specimen/Karla);
+
+:root {
+  --pri-bg-color: rgba(99, 99, 99, 0.5);
+  --sec-bg-color: #fff;
+  --btn-color: #c0df34;
+  --gray: rgb(90, 90, 90);
+  --sign-bg-color: rgb(42, 178, 175);
+  --join-bg-color: rgba(42, 179, 176, 0.8);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--pri-bg-color);
+}
+.mainContainer {
+  background-color: var(--sec-bg-color);
+  margin: 3rem auto;
+
+  width: 80vw;
+  border-radius: 1rem;
+}
+.description {
+  width: 100%;
+  font-size: 2.4rem;
+  padding: 3rem;
+}
+.description h2 {
+  color: cyan;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.description h3 {
+  color: var(--btn-color);
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.description p {
+  color: var(--pri-bg-color);
+  line-height: 2.2rem;
+}
+.container {
+  width: 100%;
+  font-size: 2.4rem;
+  padding: 3rem;
+  color: #fff;
+}
+.sign-up {
+  background-color: var(--sign-bg-color);
+}
+.sign-up h2,
+.sign-up p,
+.sign-up div {
+  margin-bottom: 1rem;
+}
+.sign-up h2 {
+  font-size: 3rem;
+}
+.dollor {
+  font-size: 3rem;
+  color: #fff;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sign-up .btn {
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: var(--btn-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  height: 4rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: color 1s ease;
+}
+.btn:hover {
+  background-color: #adff22;
+  color: #808080;
+}
+.btn:active {
+  color: black;
+  background-color: red;
+}
+.join-us {
+  background-color: var(--join-bg-color);
+  border-radius: 0 0 1rem 1rem;
+}
+.join-us h2 {
+  font-size: 3rem;
+}
+.join-us div {
+  margin: 1rem 0;
+}
+.attribution {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: inherit;
+  transition: color 0.9s ease;
+}
+.attribution a:hover {
+  color: cyan;
+}
+.attribution a:active {
+  color: red;
+}
+@media screen and (orientation: landscape) {
+  .mainContainer {
+    margin: 5rem auto 2rem;
+  }
+  .d-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sign-up {
+    border-radius: 0 0 0 1rem;
+  }
+  .sign-up div,
+  .sign-up p {
+    margin: 2rem 0;
+  }
+  .join-us {
+    border-radius: 0 0 1rem 0;
+  }
+}
